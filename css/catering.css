@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:ital,wght@1,100&family=Roboto+Mono:wght@300&family=Signika+Negative&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+    background-image: url(/Uppgift-5-Rework-Grupp/img/gott-och-blandat.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.361);
+    background-blend-mode: color;
+
+}
+
+.catering{
+    font-size: 90px;
+    display: flex;
+    margin-top: 10vw;
+    justify-content: space-around;
+
+}
+
+
+p {
+    color: wheat;
+}
+
+#toplogo {
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+#logo{
+    height: 350px;
+    width: 350px;
+    margin-top: 120px;
+}
+
+.menu:active {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 14%;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#active {
+    border-bottom: 2px solid wheat;
+}
+
+.menu a {
+    color:wheat;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu .container_img {
+    height: auto;
+    width: 20rem;
+    background-color: #6c4f7c;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+    transition: 0.7s ease-in-out;
+}
+
+#menu .container_img:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 10%; 
+    background-color: rgb(104, 78, 105);
+    gap: 5px;
+}
+
+#menu img {
+    width: 95%;
+    border-radius: 15px;
+    border: 1px solid rgb(66, 66, 66);
+
+}
+
+#info-menu {
+    display: flex;
+    justify-content: center;
+    color: wheat;
+    padding: 50px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.5rem;
+    padding: 2% 10%; 
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+}
+
+
+/* FOOTER STYLE */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr ;
+    grid-column-gap: 10px;
+    grid-row-gap: 2px;
+    width: 95%;
+}
+div:has(.parent){
+    width: 100%;    
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 25.9vh;
+}
+.parent div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+.parent div:first-of-type >img {
+    width: 12vw;
+}
+.parent > div > p{
+    color: wheat;
+}
+
+.div1 { grid-area: 2 / 1 / 3 / 2; }
+.div2 { grid-area: 2 / 2 / 3 / 3; }
+.div3 { grid-area: 2 / 3 / 3 / 4; }
+.div4 { grid-area: 2 / 4 / 3 / 5; }
+
+.text{
+    display: flex;
+    text-align: center;
+    color: wheat;
+    font-size: larger;
+    margin: 20px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:80%;
+    width:80%;
+    position:absolute;
+}
+
+h1,h3 {
+    display: flex;
+    text-align: center;
+    color: wheat;
+}
+
+.catertext{
+    display: flex;
+    color: wheat;
+    font-size: 27px;
+    margin-top: 5vw;
+
+}
+
+h4{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(50, 50, 50);
+}
+
+footer p {
+    color: rgb(50, 50, 50);
+}
+
+#phone-nav {
+    visibility: hidden;
+}

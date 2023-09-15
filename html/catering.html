@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/catering.css">
+    <script src="https://kit.fontawesome.com/f5139ef0fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu">
+        <div id="icon">
+            <img id="toplogo" src="../img/metropol_logo.png" alt="">
+        </div>
+          <a href="../index.html">Home</a>
+          <a href="./kontakt.html">Kontakta oss</a>
+          <a href="./meny.html">Våra Menyer</a>
+          <a href="./catering.html" id="active">Catering</a>
+    </div>     
+    
+
+    <div id="phone-nav">
+        <select name="pages" id="pages" onchange="handleSelect(this)">
+            <option value="catering">Catering</option>
+            <option value="meny">Våra menyer</option>
+            <option value="../index">Home</option>
+            <option value="kontakt">Kontakta oss</option>
+        </select>
+    </div>
+
+    
+    <section>
+        <div>
+            <h1 class="catering">Catering</h1>
+        <p class="catertext">
+            Intresse för catering? Kontakta gärna oss på info@metropolfoodcourt.se så skräddarsyr vi en meny för just Ert önskemål!</p>
+        </div>   
+    </section>
+
+    <div>
+        <footer class="parent">
+            <div class="div1">
+                <!--Side footer, i=icons-->
+                <img src="../img/metropol_logo.png" alt="LOGO">
+                <br>
+                <p><i class="fa-solid fa-phone"></i>08-556 400 00</p>
+                <p><i class="fa-solid fa-envelope"></i>info@leylas.se</p>
+            </div>
+            <div class="div2">
+                <!-- 2nd footer part Hitta hit -->
+                <h4>Hitta hit!</h4>
+                <br>
+                <p>Röntgenvägen 8</p>
+                <p>141 52 Huddinge</p>
+                <br>
+                <div class="map-responsive"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510.393653107254!2d17.936715069704672!3d59.22312539841022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f711e32de06cb%3A0xd5b06917b7809929!2sHellstr%C3%B6ms%20Bar%20%26%20Restaurang%20Flemingsberg!5e0!3m2!1ssv!2sse!4v1694598971153!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+                </div>
+            </div>
+            <div class="div3">
+                <!-- 3nd footer part Öppettider -->
+                <h4>Öppettider</h4>
+                <br>
+                <p>Måndag - Tisdag 10:00 - 19:00</p>
+                <p>Onsdag - Fredag 10:00 - 21:00</p>
+                <p>Lördag 11:00 - 21:00</p>
+                <p>Söndag stängt</p>
+            </div>
+            <div class="div4">
+                <!-- 4th footer part Utkörning -->
+                <h4>Utkörning till Huddinge sjukhus</h4>
+                <br>
+                <p>I vår service ingår utkörning till
+                    personal på Karolinska sjukhuset i 
+                    Huddinge. Du ringer och talar om vad du vill ha
+                    &#45; vi levererar till sjukhusets entré. Vi levererar
+                    nu även mat till akuten!</p>             
+            </div>
+
+        </footer>
+    </div>
+    
+
+    <script>
+        function handleSelect(elm)
+        {
+           window.location = elm.value+".html";
+        }
+      </script>
+</body>
+</html>

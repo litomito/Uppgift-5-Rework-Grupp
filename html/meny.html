@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu page</title>
+    <link rel="stylesheet" href="../css/meny.css">
+
+</head>
+<body>
+    <div class="menu">
+        <div id="icon">
+            <img id="logo" src="../img/metropol_logo.png" alt="food">
+        </div>
+          <a href="../index.html">Home</a>
+          <a href="./kontakt.html">Kontakta oss</a>
+          <a href="./meny.html" id="active">Våra Menyer</a>
+          <a href="./catering.html">Catering</a>
+    </div>    
+
+    <div id="phone-nav">
+        <select name="pages" id="pages" onchange="handleSelect(this)">
+            <option value="meny">Våra menyer</option>
+            <option value="../index">Home</option>
+            <option value="kontakt">Kontakta oss</option>
+            <option value="catering">Catering</option>
+        </select>
+    </div>
+
+    <div id="info-menu">
+        <h3>Vad Vi Erbjuder</h3>
+    </div>
+
+    <div id="menu">
+        <a href="#pizza" class="container_img">Pizza <img src="../img/pizza-slice.jpeg" alt="pizza"></a>
+        <a href="#grill" class="container_img">Grill <img src="../img/kebeb-spett.jpeg" alt="grill"></a>
+        <a href="#sallad" class="container_img">Sallad <img src="../img/sallad.jpeg" alt="sallad"></a>
+        <a href="#kebab" class="container_img">Kebab <img src="../img/kebab-med-bröd.jpeg" alt="kebab"></a>
+        <a href="#burgare" class="container_img">Burgare <img src="../img/burgare.jpeg" alt="burgare"></a>
+        <a href="#barn" class="container_img">Barn <img src="../img/pommed-med-nuggets.jpeg" alt="barn"></a>
+    </div>
+    
+    <div id="food">
+
+        <div id="pizza">
+            <header class="food_h2"> Pizza</header>
+
+            <div class="food_container">
+                <ul>
+                    <li>Margherita</li>
+                    <div class="me1">
+                      <a>Tomatsås, ost</a>
+                      <a>100:-</a>
+                    </div>
+
+                    <li>Funghi</li>
+                    <div class="me1">
+                      <a>Champinjoner</a>
+                      <a>100:-</a>
+                    </div>
+
+                    <li>Vesuvio</li>
+                    <div class="me1">
+                      <a>Skinka</a>
+                      <a>100:-</a>
+                    </div>
+
+                    <li>Calzone</li>
+                    <div class="me1">
+                      <a> Inbakad Skinka</a>
+                      <a>100:-</a>
+                    </div>
+
+                    <li>Capricciosa</li>
+                    <div class="me1">
+                      <a>Skinka, champinjoner</a>
+                      <a>100:-</a>
+                    </div>
+
+                    <li>Hawaii</li>
+                    <div class="me1">
+                      <a>Skinka, ananas</a>
+                      <a>100:-</a>
+                    </div>
+
+
+                    <li>Opera</li>
+                    <div class="me1">
+                      <a>Skinka,tonfisk</a>
+                      <a>100:-</a>
+                    </div>
+
+
+                    <li>Bussola</li>
+                    <div class="me1">
+                      <a>skinka,räkor</a>
+                      <a>100:-</a>
+                    </div>
+
+
+                    <li>Vanessa</li>
+                    <div class="me1">
+                      <a>Räkor,tonfisk</a>
+                      <a>100:-</a>
+                    </div>
+
+
+                    <li>Al Tonno</li>
+                    <div class="me1">
+                      <a>Tonfisk,lök</a>
+                      <a>100:-</a>
+                    </div>
+
+
+                    <li>Pompei</li>
+                    <div class="me1">
+                      <a>Bacon,lök,ägg</a>
+                      <a>100:-</a>
+                    </div>
+
+                </ul> 
+            </div>
+        </div>
+
+        <div id="grill">
+            <header class="food_h2"> Grill rätter</header>
+
+            <div class="food_container">
+                <ul>
+                    <li>Urfa shish kebab</li>
+                    <div class="me2">
+                        <a>Shish kebab, grillad paprika, tomat, grönsaker och meze</a>
+                        <a>149:-</a>
+                    </div>
+
+                    <li>Kycklinspett</li>
+                    <div class="me2">
+                      <a>Kycklingfilé på spett, grillad paprika, tomat, grönsaker och meze</a>
+                      <a>149:-</a>
+                    </div>
+
+                    <li>Halloumitallrik</li>
+                    <div class="me2">
+                      <a>Grillad halloumi ost, grillad paprika, tomat, grönsaker, avokado och meze</a>
+                      <a>149:-</a>
+                    </div>
+
+                    <li>Lammspett</li>
+                    <div class="me2">
+                      <a>Lammfilé, grillad paprika, tomat, grönsaker och meze</a>
+                      <a>175:-</a>
+                    </div>
+
+                    <li>Lammracks</li>
+                    <div class="me2">
+                      <a>Lammracks, grillad paprika, tomat, grönsaker och meze</a>
+                      <a>199:-</a>
+                    </div>
+
+                    <li>Mix grill</li>
+                    <div class="me2">
+                      <a>Lammracks, lammspett, adana, kycklingspett, grillad paprika, tomat och meze</a>
+                      <a>219:-</a>
+                    </div>
+
+
+                    <li>Falafel vegetarisk</li>
+                    <div class="me2">
+                      <a>Skinka,tonfisk</a>
+                      <a>169:-</a>
+                    </div>
+
+
+                    <li>Laxtallrik</li>
+                    <div class="me2">
+                      <a>skinka,räkor</a>
+                      <a>169:-</a>
+                    </div>
+
+
+                    <li>Fish & Chips</li>
+                    <div class="me2">
+                      <a>Räkor,tonfisk</a>
+                      <a>149:-</a>
+                    </div>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="sallad">
+
+            <header class="food_h2"> Sallad rätter</header>
+
+            <div class="food_container">
+                <ul>
+                  <li>Ost-Skinksallad</li>
+                  <div class="me">
+                      <a>Romansallad, tomat, gurka,rödlök, paprika, majs</a>
+                      <a>129:-</a>
+                  </div>
+
+                  <li>Kebabsallad</li>
+                    <div class="me">
+                        <a>Isbergssallad, tomat, gurka, lök, fefferoni</a>
+                        <a>129:-</a>
+                  </div>
+                  
+                  <li>Ceasarsallad m. kyckling</li>
+                    <div class="me">
+                        <a>Romansallad, tomat, oliver, parmesan, krutonger</a>
+                        <a>139:-</a>
+                  </div>
+                  
+                  <li>Halloumisallad</li>
+                    <div class="me">
+                        <a>Tomat, gurka, rödlök, cashewnötter, oliver, honungsmelon</a>
+                        <a>139:-</a>
+                  </div>
+                  
+                  <li>Räksallad</li>
+                    <div class="me">
+                        <a>räkor, romansallad, ägg, citron, avokado</a>
+                        <a>139:-</a>
+                  </div>
+                  
+                
+                </ul>                
+            </div>
+        </div>
+
+        <div id="kebab">
+
+            <header class="food_h2"> Kebab rätter</header>
+
+            <div class="food_container">
+                <ul>
+
+                  <li>Kebabtallrik</li>
+                  <div class="me">
+                      <a>isbergssallad, tomat, feferoni, lök, rödsås och vitlökssås </a>
+                      <a>119:-</a>
+                  </div>
+
+                  <li>Kebabrulle</li>
+                    <div class="me">
+                        <a>isbergssallad, tomat, feferoni, lök, rödsås och vitlökssås</a>
+                        <a>125:-</a>
+                  </div>
+                  
+                  <li>3. Kebab med bröd</li>        
+                    <div class="me">
+                      isbergssallad, tomat, feferoni, lök, rödsås och vitlökssås</a>
+                      <a>95:-</a>
+                   </div>
+                   
+                </ul>                
+            </div>
+        </div>
+
+        <div id="burgare">
+
+            <header class="food_h2"> Burgare rätter</header>
+
+            <div class="food_container">
+                <ul>
+                  <li>Original burgare</li>
+                  <div class="me3">
+                      <a> Högrevsburgare, burgerdressing. krispsallat, tomat, rödlök, ketchup</a>
+                      <a>109/139:-</a>
+                  </div>
+
+                  <li>Cheese burgare</li>
+                    <div class="me3">
+                        <a>Högrevburgare, cheddarost, krispsallat, tomat, rödlök, saltgurka</a>
+                        <a>109/139:-</a>
+                  </div>
+                  
+                  <li>Halloumi burgare</li>        
+                    <div class="me3">
+                      <a> Högrevburgare, chilimajo,krispsallat, tomat, rostad lök</a>
+                      <a>109/139:-</a>
+                  </div>
+
+                  <li>Chipotle burgared</li>        
+                    <div class="me3">
+                      <a>Högrevburgare, chilimajo, cheddarost, krispsallat, tomat, BBQ-sås</a>
+                      <a>109/139:-</a>
+                  </div>
+
+
+                  <li>Cheese & Bacon burgare</li>
+                  <div class="me3">
+                      <a>Burgerdressing, cheddarost, kalvbacon, krispsallat, tomat, rödlök</a>
+                      <a>119/149:-</a>
+                  </div>
+
+                  <li>BBQ burgare</li>
+                    <div class="me3">
+                        <a>BBQ-sås, cheddarost, kalvbacon, karamelliserad lök</a>
+                        <a>119/149:-</a>
+                  </div>
+                  
+                  <li>Tryffel burgare </li> 
+                    <div class="me3">
+                      <a> Högrevburgare, tryffelmajo, cheddarost, karamelliserad lök</a>
+                      <a>119/149:-</a>
+                  </div>
+
+                  <li>Kyckling burgare</li>        
+                    <div class="me3">
+                      <a> Högrevburgare, crisby fried chicken, husets majo, cheddarost</a>
+                      <a>129:-</a>
+                  </div>
+                </ul>                
+            </div>
+        </div>
+
+        <div id="barn">
+
+            <header class="food_h2"> Barn rätter</header>
+
+            <div class="food_container">
+                <ul>
+                  <li>Chicken nuggets</li>
+                  <div class="me">
+                      <a>Med pommes</a>
+                      <a>79:-</a>
+                  </div>
+
+                  <li>Cheeseburgare</li>
+                    <div class="me">
+                        <a>Med pommes</a>
+                        <a>79:-</a>
+                  </div>
+                  
+                  <li>kycklingspett </li> 
+                    <div class="me">
+                      <a> Med pommes</a>
+                      <a>79:-</a>
+                  </div>
+                </ul>                
+            </div>
+        </div>
+
+    </div>   
+
+
+    <div>
+        <footer class="parent">
+            <div class="div1">
+                <!--Side footer, i=icons-->
+                <img src="../img/metropol_logo.png" alt="LOGO">
+                <br>
+                <p><i class="fa-solid fa-phone"></i>08-556 400 00</p>
+                <p><i class="fa-solid fa-envelope"></i>info@leylas.se</p>
+            </div>
+            <div class="div2">
+                <!-- 2nd footer part Hitta hit -->
+                <h4>Hitta hit!</h4>
+                <br>
+                <p>Röntgenvägen 8</p>
+                <p>141 52 Huddinge</p>
+                <br>
+                <div class="map-responsive"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510.393653107254!2d17.936715069704672!3d59.22312539841022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f711e32de06cb%3A0xd5b06917b7809929!2sHellstr%C3%B6ms%20Bar%20%26%20Restaurang%20Flemingsberg!5e0!3m2!1ssv!2sse!4v1694598971153!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+                </div>
+            </div>
+            <div class="div3">
+                <!-- 3nd footer part Öppettider -->
+                <h4>Öppettider</h4>
+                <br>
+                <p>Måndag - Tisdag 10:00 - 19:00</p>
+                <p>Onsdag - Fredag 10:00 - 21:00</p>
+                <p>Lördag 11:00 - 21:00</p>
+                <p>Söndag stängt</p>
+            </div>
+            <div class="div4">
+                <!-- 4th footer part Utkörning -->
+                <h4>Utkörning till Huddinge sjukhus</h4>
+                <br>
+                <p>I vår service ingår utkörning till
+                    personal på Karolinska sjukhuset i 
+                    Huddinge. Du ringer och talar om vad du vill ha
+                    &#45; vi levererar till sjukhusets entré. Vi levererar
+                    nu även mat till akuten!</p>             
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script>
+        function handleSelect(elm)
+        {
+           window.location = elm.value+".html";
+        }
+      </script>
+</body>
+</html>

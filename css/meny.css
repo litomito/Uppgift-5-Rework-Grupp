@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:ital,wght@1,100&family=Roboto+Mono:wght@300&family=Signika+Negative&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+    background-image: url(/Uppgift-5-Rework-Grupp/img/gott-och-blandat.jpeg);
+    background-repeat: repeat;
+    height: 100vh ;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.361);
+    background-blend-mode: color;
+}
+
+#phone-nav {
+    display: none;
+}
+
+
+#logo-phone {
+    display: none;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-phone-for {
+    width: 32%;
+    display: none;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    color: whitesmoke;
+}
+
+p {
+    color: whitesmoke;
+}
+
+#logo {
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 0.5%;
+}
+
+.menu:active {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 14%;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.active {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu .container_img {
+    height: auto;
+    width: 20rem;
+    background-color: #6c4f7c;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+    transition: 0.7s ease-in-out;
+}
+
+#menu .container_img:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 10%; 
+    background-color: rgb(104, 78, 105);
+    gap: 5px;
+}
+
+#menu img {
+    width: 95%;
+    border-radius: 15px;
+    border: 1px solid rgb(66, 66, 66);
+
+}
+
+#info-menu {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 2% 10%; 
+
+}
+
+/* #food div {
+    margin: 2rem;
+    border: solid 1px red;
+    background-color: #2b4353;
+} */
+
+#food > div, #food >div > div{
+    margin: 1.5rem;
+    background-color: #2b4353;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+
+#food #pizza, #burgare, #sallad, #grill, #kebab, #barn{
+    width: 95%;
+    background-color: #393e46;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.food_h2 {
+    width: 99.8%;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    border: solid 1px black;
+    background-color: #5c5470;
+}
+
+.food_header_h2 {
+    color: white;
+    height: fit-content;
+    font-size: 20px;
+    padding-top: 5px;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.food_container {
+    width: 45%;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    border: solid 1px none;
+}
+
+.me {
+    background-color: black;
+    display: flex; 
+    justify-content: space-between; 
+    width: 98.4%;
+    padding: 3px;
+    border-radius: 0 0 10px 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.me1 {
+    background-color: black;
+    display: flex; 
+    justify-content: space-between; 
+    width: 98.4%;
+    padding: 3px;
+    border-radius: 0 0 10px 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.me2 {
+    background-color: black;
+    display: flex; 
+    justify-content: space-between; 
+    width: 88%;
+    padding: 3px;
+    border-radius: 0 0 10px 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.me3 {
+    background-color: black;
+    display: flex; 
+    justify-content: space-between; 
+    width: 94.3%;
+    padding: 3px;
+    border-radius: 0 0 10px 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+ul .pengar {
+    position: relative;
+    left: 90%
+}
+
+li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+    background-color: black;
+    width: 35vw;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    padding: 3px;
+}
+
+ul p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    width: 35vw;
+    font-size: small;
+    padding: 3px;
+    border-radius: 0 0 8px 8px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#food-group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    width: 35vw;
+}
+
+#food-price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    width: 35vw;
+}
+
+#price_right {
+    text-align: right;
+    background-color: black;
+    border: solid 1px red;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 5px;
+    font-size: 1rem;
+    align-self: flex-end;
+}
+#price_right>p, #price_right>a{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    width: 35vw;
+    font-size: small;
+    padding: 3px;
+    border-radius: 0 0 8px 8px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.number_logo {
+    margin-left: 10px;
+    margin-right: 5px;
+    background-color: #f96d00;
+    padding: 4px 10px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.food_info {
+    border: solid 1px blue;
+}
+
+#phone-nav {
+    visibility: hidden;
+}
+
+
+
+
+
+/* FOOTER STYLE */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr ;
+    grid-column-gap: 10px;
+    grid-row-gap: 2px;
+    width: 95%;
+}
+
+div:has(.parent){
+    width: 100%;    
+    height: 50vh;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+}
+.parent div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+.parent div:first-of-type >img {
+    width: 12vw;
+}
+.div1 { grid-area: 2 / 1 / 3 / 2; }
+.div2 { grid-area: 2 / 2 / 3 / 3; }
+.div3 { grid-area: 2 / 3 / 3 / 4; }
+.div4 { grid-area: 2 / 4 / 3 / 5; }
+
+.text{
+    display: flex;
+    text-align: center;
+    color: whitesmoke;
+    font-size: larger;
+    margin: 20px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:80%;
+    width:80%;
+    position:absolute;
+}
+
+h4{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(50, 50, 50);
+}
+
+footer p {
+    color: rgb(50, 50, 50);
+}
+
+
+/* -----------------------Media querys------------------------- */
+ 
+
+
+
+@media (max-width: 40em) {    
+    
+    body {
+        box-sizing: border-box;
+        font-family: 'Signika Negative', sans-serif;
+        height: 100vh;
+        max-width: 100%;
+        overflow-x: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.361);
+        background-blend-mode: color;
+    }
+
+    #logo-phone {
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo-phone-for {
+        width: 32%;
+        display: flex;
+    }
+
+    #phone-nav {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0 5px 0;
+        height: 4vh;    
+    }
+    
+    h1{
+        font-size: 17px;
+    }
+    
+    h1,h3 {
+        display: flex;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    
+    p {
+        color: rgb(255, 255, 255);
+    }
+    
+    /* #toplogo {
+        display: inline-flex;
+        justify-content: flex-start;
+        padding: 5px;
+    } */
+    
+    #logo{
+        height: 350px;
+        width: 350px;
+        margin-top: 120px;
+    }
+    
+    .menu:active {
+        text-decoration: none;
+    }
+    
+    .menu {
+        display: flex;
+        gap: 14%;
+        align-items: center;
+        border-radius: 6px;
+        visibility: hidden;
+    }
+    
+    #active {
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        visibility: hidden;
+
+    }
+    
+    
+    .parent2 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+        background-color: rgba(102, 51, 153, 0.509);
+        height: 50vh;
+    
+        }
+        
+        .div6 { grid-area: 2 / 3 / 3 / 5; 
+            text-align: center;}
+        .div7 { grid-area: 3 / 3 / 4 / 6; 
+            text-align: center;}
+        .div8 { grid-area: 4 / 2 / 5 / 6; 
+            text-align: center; font-size: 18px;}
+    
+    /* FOOTER STYLE */
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr ;
+        grid-column-gap: 10px;
+        grid-row-gap: 2px;
+        width: 95%;
+    }
+    div:has(.parent){
+        width: 100%;    
+        height: 65vh;
+        background-color: rgba(102, 51, 153, 0.509);
+        display: flex;
+        justify-content: center;
+    }
+    .parent div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .parent div:first-of-type >img {
+        width: 12vw;
+    }
+    .div1 { grid-area: 2 / 1 / 3 / 2; }
+    .div2 { grid-area: 2 / 2 / 3 / 3; }
+    .div3 { grid-area: 2 / 3 / 3 / 4; }
+    .div4 { grid-area: 2 / 4 / 3 / 5; }
+    
+    .text{
+        display: flex;
+        text-align: center;
+        color: whitesmoke;
+        font-size: larger;
+        margin: 20px;
+    }
+    
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:80%;
+        width:100%;
+        position:absolute;
+    }
+    
+    h4{
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+        color: rgb(50, 50, 50);
+    }
+    
+    footer p {
+        color: rgb(50, 50, 50);
+    }
+
+    
+    section{
+        background-color: rgba(102, 51, 153, 0.509);
+    }
+    
+    .empty{
+        height: 15vh;
+        background-color: rgba(102, 51, 153, 0.509);
+    }
+    
+
+
+    /* --------------------Menu page---------------------------- */
+    #menu .container_img {
+        width: 40em;
+        background-color: #6c4f7c;
+        text-align: center;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 5px;
+        transition: 0.7s ease-in-out;
+    }
+    
+    #menu .container_img:hover {
+        transform: scale(1.1);
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+    
+    #menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2% 10%; 
+        background-color: rgb(104, 78, 105);
+        gap: 5px;
+    }
+    
+    #menu img {
+        width: 95%;
+        border-radius: 15px;
+        border: 1px solid rgb(66, 66, 66);
+    
+    }
+   
+   
+   
+   
+    #menu {
+        width: 200%;
+    }
+
+    #food {
+        width: 50rem;
+
+    }
+
+    .food_container {
+        width: 10px;
+    }
+
+    #food #pizza .food_container li, .me1 {
+        width: 20rem;
+        font-size: 5vh;
+    }
+
+    #food #kebab .food_container li {
+        width: 30rem;
+        font-size: 5vh;
+    }
+
+    #food #grill .food_container li, .me2 {
+        width: 30rem;
+        font-size: 5vh;
+    }
+
+    #food #sallad .food_container li, .me {
+        width: 30rem;
+        font-size: 5vh;
+    }
+
+    #food #burgare .food_container li {
+        width: 32.16rem;
+        font-size: 5vh;
+    }
+
+    #food #burgare .food_container .m3 {
+        width: 80rem;
+        font-size: 5vh;
+    }
+
+    #food #barn .food_container .m2 {
+        width: 20rem;
+        font-size: 5vh;
+    }
+
+    #food #barn .food_container li{
+        width: 20rem;
+        font-size: 5vh;
+    }
+
+}

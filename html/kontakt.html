@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta Oss</title>
+    <link rel="stylesheet" href="../css/kontakt.css">
+    <script src="https://kit.fontawesome.com/f5139ef0fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="fullHeight">
+        <div id="backGround"></div>
+        <!-- MENU -->
+        <div class="menu">
+            <div id="icon">
+                <img id="logo" src="../img/metropol_logo.png" alt="food">
+            </div>
+            <a href="../index.html">Home</a>
+            <a href="#" class="active">Kontakta oss</a>
+            <a href="./meny.html">Våra Menyer</a>
+            <a href="./catering.html">Catering</a>
+        </div>     
+
+        <div id="logo-phone">
+            <img src="../img/metropol_logo.png" id="logo-phone-for" alt="logo">
+        </div>
+
+        <div id="phone-nav">
+            <select name="pages" id="pages" onchange="handleSelect(this)">
+                <option value="kontakt">Kontakta oss</option>
+                <option value="../index">Home</option>
+                <option value="meny">Våra menyer</option>
+                <option value="catering">Catering</option>
+            </select>
+        </div>
+
+
+
+        <!-- Kontakt Kort container full-->
+        <div class="fullDiv fullVis">
+            <!-- korten back 85%-->
+            <div class="insideDiv">
+                <!-- kortback1 -->
+                <div>
+                    <!-- Kort Innehåll 1 -->
+                    <div class="cardContent">
+                        <!-- 25% -->
+                        <div>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+                        <!-- 85% -->
+                        <div>
+                            <h1>Kontakta oss</h1>
+                            <p>08-556-400 00</p>
+                            <p>info@leylas.se</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- kortback2 -->
+
+                <div>
+                    <!-- Kort Innehåll 2 -->
+                    <div class="cardContent">
+                        <!-- 25% -->
+                        <div>
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                        </div>
+                        <!-- 85% -->
+                        <div>
+                            <h1>Hitta hit!</h1>
+                            <p>Röntgenvägen 8</p>
+                            <p>141 53 Huddinge</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- kortback3 -->
+
+                <div>
+                    <!-- Kort Innehåll 3 -->
+                    <div class="cardContent">
+                        <!-- 25% -->
+                        <div>
+                            <span><i class="fa-regular fa-clock"></i></span>
+                        </div>
+                        <!-- 85% -->
+                        <div>
+                            <h1>Öppettider</h1>
+                            <p>Måndag - Tisdag 10:00 - 19:00</p>
+                            <p>Onsdag - Fredag 10:00 - 21:00</p>
+                            <p>Lördag 11:00 - 21:00</p>
+                            <p>Söndag Stängt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Kontakt Kort Container end -->
+        <!-- Empty Space Start -->
+        <div class="fullDiv" id="hittaOssDiv">
+            <h1>Hitta Oss</h1>
+        </div>
+        <!-- Empty Space End -->
+        <div class="map-responsive fullDiv"> 
+            <iframe id="map-big" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2041.5746138557558!2d17.93478387707416!3d59.22312537456305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f711e32de06cb%3A0xd5b06917b7809929!2sHellstr%C3%B6ms%20Bar%20%26%20Restaurang%20Flemingsberg!5e0!3m2!1ssv!2sse!4v1694765059258!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+    <div>
+        <footer class="parent">
+            <div class="div1">
+                <!--Side footer, i=icons-->
+                <img src="../img/metropol_logo.png" alt="LOGO">
+                <br>
+                <p><i class="fa-solid fa-phone"></i>08-556 400 00</p>
+                <p><i class="fa-solid fa-envelope"></i>info@leylas.se</p>
+            </div>
+            <div class="div2">
+                <!-- 2nd footer part Hitta hit -->
+                <h4>Hitta hit!</h4>
+                <br>
+                <p>Röntgenvägen 8</p>
+                <p>141 52 Huddinge</p>
+                <br>
+                <div class="map-responsive2"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510.393653107254!2d17.936715069704672!3d59.22312539841022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f711e32de06cb%3A0xd5b06917b7809929!2sHellstr%C3%B6ms%20Bar%20%26%20Restaurang%20Flemingsberg!5e0!3m2!1ssv!2sse!4v1694598971153!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="div3">
+                <!-- 3nd footer part Öppettider -->
+                <h4>Öppettider</h4>
+                <br>
+                <p>Måndag - Tisdag 10:00 - 19:00</p>
+                <p>Onsdag - Fredag 10:00 - 21:00</p>
+                <p>Lördag 11:00 - 21:00</p>
+                <p>Söndag stängt</p>
+            </div>
+            <div class="div4">
+                <!-- 4th footer part Utkörning -->
+                <h4>Utkörning till Huddinge sjukhus</h4>
+                <br>
+                <p>I vår service ingår utkörning till
+                    personal på Karolinska sjukhuset i 
+                    Huddinge. Du ringer och talar om vad du vill ha
+                    &#45; vi levererar till sjukhusets entré. Vi levererar
+                    nu även mat till akuten!</p>             
+            </div>
+
+        </footer>
+    </div>
+
+
+
+    <script>
+        function handleSelect(elm)
+        {
+           window.location = elm.value+".html";
+        }
+      </script>
+</body>
+</html>
