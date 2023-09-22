@@ -9,7 +9,7 @@
 - The start menu has been completely redesigned from the ground up and it has a new style on the page. It has become easier to read and easier to navigate through. It still has all the infomation like the old one. It's a simple design on the page and it works without any problems.
 
 ### Menu
--
+- 
 
 ### Contact
 -
