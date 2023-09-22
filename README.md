@@ -12,7 +12,7 @@
 - 
 
 ### Contact
--
+- The contact looked pretty good to begin with. The problem was with the contact-cards. The cards looked cut-off and kind of unfinished because of it. We remade them with the same layout, just with a bit more space above the cards. The colorscheme was also changed, to match our vision of the website.
 
 ### Catering
 -
