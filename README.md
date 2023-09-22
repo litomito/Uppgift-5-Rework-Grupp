@@ -15,7 +15,7 @@
 - The contact looked pretty good to begin with. The problem was with the contact-cards. The cards looked cut-off and kind of unfinished because of it. We remade them with the same layout, just with a bit more space above the cards. The color scheme was also changed, to match our vision of the website.
 
 ### Catering
--
+- The catering page was in the same page as the start page on the original website, we thought that it was hard to find so we made an page just for catering. The catering page was just as the original but with our font and styling, we made the text more visible for the eye and made the catering page link in the navbar of every page we had.
 
 
 
